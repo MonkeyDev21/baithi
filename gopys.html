@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+
+</head>
+<link rel="stylesheet" href="css.css">
+
+<body>
+  <h3 class="tit_header">Góp ý</h3>
+  <hr>
+  <div>
+    Địa chỉ: Xã Lộc Tiến - Huyện Phú Lộc - Tỉnh TT Huế <br>
+    Số điện thoại: 0234.3684333 <br>
+    Email:nhngoc. tl@hue.edu.vn, hoangngoc12345@gmail.com<br>
+  </div>
+  <form id="formx" name="formx" method="post" onsubmit="return checkform(this,'/contactus.php');">
+    <div id="hienthi" align="left">
+      <table width="98%" border="0" cellspacing="5" style="font-size:12px; font-weight:bold">
+        <tbody>
+          <tr>
+            <td height="20" colspan="3" align="right" valign="bottom"></td>
+          </tr>
+          <tr>
+            <td width="120" height="20" class="txth">Họ và tên <span class="sao1" style="color:red">*</span></td>
+            <td height="20" colspan="2">
+              <input name="full_name" type="text" id="full_name" style="width:250px" class="tfield"
+                onblur="onchangevalue(this,'full_namediv')">
+              <span class="alert1" id="full_namediv"></span>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" class="txth">Email <span class="sao1" style="color:red">*</span></td>
+            <td height="20" colspan="2">
+              <input name="emails" type="text" id="emails" style="width:250px" class="tfield">
+              <span class="alert1" id="err_email"></span>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" class="txth">Tiêu đề<span class="sao1" style="color:red">*</span></td>
+            <td height="20" colspan="2">
+              <input name="subject" type="text" id="subject" style="width:250px" class="tfield"
+                onblur="onchangevalue(this,'subjectdiv')">
+              <span class="alert1" id="subjectdiv"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="txth">Nội dung <span class="sao1" style="color:red">*</span></td>
+            <td colspan="2">
+              <textarea class="tfield" name="message" style="width:375px; height:80px" id="message"
+                onblur="onchangevalue(this,'messagediv')"></textarea>
+              <span class="alert1" id="messagediv"></span>
+            </td>
+          </tr>
+          <tr>
+
+
+            <span class="alert1" id="code_confirmdiv"></span>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" align="right" style="padding-top:15">&nbsp;</td>
+            <td height="20" colspan="2">
+              <input name="submit" type="submit" id="submit" value="Gửi" class="button1">
+              <input name="reset" type="reset" id="reset" value="Làm Lại" class="button1">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <div id="loadcontact"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- End div HT -->
+    <br>
+    <input type="hidden" name="token4847f7635818511da322486ae13c86d3" value="d19f7626c26efc3a1323cfa39da1c604">
+  </form>
+
+  <span class="alert1" id="code_confirmdiv"></span>
+</body>
+
+</html>

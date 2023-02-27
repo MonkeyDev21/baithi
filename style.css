@@ -1,0 +1,164 @@
+#container {
+    width: 100%;
+    padding: 0 auto;
+
+}
+
+header {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    background-image: url(img/2.png);
+}
+
+#container>header>.top_nav {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(223, 53, 138);
+    border-bottom-right-radius: 10px;
+
+}
+
+#container>header>.top_nav>ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#container>header>.top_nav>ul>li>a {
+    text-decoration: none;
+    word-spacing: 3px;
+    font-weight: bold;
+    margin: 10px 10px;
+    color: white;
+
+}
+
+#container>header>.top_nav>ul>li>a:hover {
+    text-decoration: none;
+    color: red !important;
+}
+
+
+
+#container>nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(223, 53, 138);
+    text-align: center;
+
+}
+
+#container>nav>a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 30px;
+    font-size: 22px;
+    font: timenewroman;
+}
+
+#container>nav>a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+#container>aside {
+
+    min-height: 1px;
+    width: 19%;
+    background-color: rgb(231, 164, 210);
+    float: left;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+    border: 10px;
+    display: block;
+    border: 4px solid rgb(205, 37, 37);
+    height: 1300px;
+
+}
+
+#container>aside>div>.danhmuc>a {
+    color: black;
+    text-decoration: none;
+
+
+}
+
+#container>aside>div>.danhmuc :hover {
+
+    color: red;
+    text-decoration: underline;
+    border-bottom: 1px dotted rgb(146, 100, 100);
+    background-color: rgb(212, 118, 207);
+    color: white;
+    font-weight: bold;
+
+}
+
+#container>aside h3 {
+    color: rgb(183, 62, 82);
+    text-align: center;
+    border-radius: 5px 5px royalblue;
+    border-radius: 10px;
+    background-color: aqua;
+
+}
+
+#container>#hai {
+    min-height: 1300px;
+    width: 20%;
+    clear: right;
+
+
+}
+
+#container>article {
+    border: 3px solid rgb(68, 112, 144);
+    width: 59%;
+    float: left;
+    height: 800px;
+    background-image: url('Img/8.jpg');
+    height: 1300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: pink;
+
+}
+
+#container>article h1 {
+    color: rgb(183, 62, 82);
+    text-align: center;
+    width: 100%;
+    height: 10%;
+
+}
+
+#container>footer {
+    border-top: 5px double orangered;
+    clear: both;
+    line-height: 50px;
+    background-color: lightcyan;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#container>article>iframe {
+    width: 880px;
+    height: 1300px;
+
+}
+
+#container>aside>iframe {
+    width: 290px;
+    height: 200px;
+}
+
+#container>aside>img {
+    width: 270px;
+    height: 300px;
+}
